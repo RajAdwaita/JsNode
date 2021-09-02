@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "name": "jsnode",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajAdwaita/JsNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RajAdwaita/JsNode/issues"
+  },
+  "homepage": "https://github.com/RajAdwaita/JsNode#readme"
+}
