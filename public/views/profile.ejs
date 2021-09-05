@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsNode</title>
+
+    <style>
+        body {
+            background: greenyellow;
+            padding: 0;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
+
+        }
+
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+
+        p,
+        li {
+            font-size: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to The profile of <%= person %>
+        </h1>
+        <p>AGE :<%=data.age%>
+        </p>
+        <p>JOB :<%=data.job%>
+        </p>
+
+        <ul>
+            <li>
+                <%data.games.forEach(function(item){%>
+
+            <li>
+                <%=item%>
+            </li>
+
+            <% })%>
+                </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
