@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JsNode</title>
-
+    <title>Document</title>
     <style>
         body {
             background: greenyellow;
@@ -28,38 +27,18 @@
             text-align: center;
         }
 
-        p,
-        li {
+        p {
             font-size: 1.5rem;
             text-align: center;
-            text-decoration: none;
-            align-items: center;
         }
     </style>
 </head>
 
 <body>
     <%- include ('partials/nav.ejs') %>
-        <div class="container">
-            <h1>Welcome to The profile of <%= person %>
-            </h1>
-            <p>AGE :<%=data.age%>
-            </p>
-            <p>JOB :<%=data.job%>
-            </p>
 
-            <ul>
-                <li>
-                    <%data.games.forEach(function(item){%>
-
-                <li>
-                    <%=item%>
-                </li>
-
-                <% })%>
-                    </li>
-            </ul>
-        </div>
+        <h1>Contact Us</h1>
+        <p>Fill the form</p>
 
 </body>
 

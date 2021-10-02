@@ -225,11 +225,20 @@ var express = require('express');
 var app = express();
 
 app.set('view engine', 'ejs');
+// app.use('/assets', function (req, res, next) {
+//     console.log(req.url);
+//     next();
 
+
+// })
+
+app.use('/public/assets', express.static('assets'));
 
 app.get('/', function (req, res) {
     // res.send("Hello friends")
-    res.sendFile(__dirname + '/index.html')
+    // res.sendFile(__dirname + '/index.html')
+
+    res.render('index')
 })
 app.get('/home', function (req, res) {
     res.send("Hello HOME PAGE")
@@ -237,7 +246,8 @@ app.get('/home', function (req, res) {
 })
 app.get('/contact', function (req, res) {
     // res.send("Hello CONTACT US")
-    res.sendFile(__dirname + '/contact.html')
+    // res.sendFile(__dirname + '/contact.html')
+    res.render('contact')
 
 })
 
